@@ -67,15 +67,15 @@
 	</pre>
 </div>
 
-<h1>HTML Part 2 - Header</h1>
+<h1>HTML Part 2 - Head</h1>
 
-<p>Now let&#39;s start by making the first section of the CV, the header section.</p>
+<p>Now let&#39;s start by making the first section of the CV, the head section.</p>
 
-<p>Add the following code to your <code>index.html</code> file (after the opening <code>header</code> tag).</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header&gt;</span>
-  <span class="nt"><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"&rt;</code></span>
+<p>Add the following code to your <code>index.html</code> file (after the opening <code>head</code> tag).</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
+  <span class="nt"><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"&gt;</code></span>
   <span class="nt"><code>&lt;link rel="stylesheet" href="main.css"&gt;</code></span>
-<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
 </code></pre></div>
 <p>This is for CSS later, you can read about Bootstrap <a href="http://getbootstrap.com/">here</a>.</p>
 <p>You'll notice a difference in the styling of your page, this is due to Bootstrap's default styles (fonts, spacings and etc.)</p>
@@ -83,10 +83,10 @@
 <h1>HTML Part 3 - Body</h1>
 <p>Time to add some content, type in <code>&lt;h1&gt;Name&lt;h1&gt;</code> and <code>&lt;h2&gt;Title&lt;h2&gt;</code></p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
 	<span class="nt"><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"&gt;</code></span>
 	<span class="nt"><code>&lt;link rel="stylesheet" href="main.css"&gt;</code></span>
-<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
 <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;h1&gt;</span>Name<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;h2&gt;</span>Title<span class="nt">&lt;/h2&gt;</span>
@@ -98,13 +98,13 @@
 <h2>Contact Details</h2>
 
 <p>We now need to complete the first section (the sidebar) which is &quot;contact&quot;.
-We&#39;re going to open up a <code>div</code> element (div stands for division). Within it we&#39;re going to put a heading, a <code>h4</code> (4 because it should be smaller and lower down the hierarchy of the page with regards to the name and current position) with &quot;contact&quot;:</p>
+We&#39;re going to open up a <code>div</code> element (div stands for division). Within it we&#39;re going to put a heading, a <code>h3</code> (3 because it should be smaller and lower down the hierarchy of the page with regards to the name and current position) with &quot;contact&quot;:</p>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
 <span class="nt">&lt;div&gt;</span>
    <span class="nt">&lt;h1&gt;</span>Name<span class="nt">&lt;/h1&gt;</span>
     	<span class="nt">&lt;h2&gt;</span>Title<span class="nt">&lt;/h2&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
-    	    <span class="nt">&lt;h4&gt;</span>Contact<span class="nt">&lt;/h4&gt;</span>
+    	    <span class="nt">&lt;h3&gt;</span>Contact<span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
 
@@ -117,8 +117,8 @@ We&#39;re going to open up a <code>div</code> element (div stands for division).
 <h3>Anchor (hyperlinks)</h3>
 
 <p>Remember the <strong><a href="http://getbootstrap.com">here</a></strong> hyperlink to Bootstrap you saw earlier? This can be done using the <code>a</code> tag, the &quot;anchor&quot; tag. This tag has an attribute called <code>href</code> which stands for hypertext reference which means we can point it to say a website or an email address. After the &quot;contact&quot; heading, let&#39;s add the following code:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h4&gt;</span>Contact<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;p&gt;&lt;a</span><span class="na">href=</span><span class="s">&quot;https://linkedin.com/in/jiashern&quot;</span><span class="nt">&gt;</span>LinkedIn<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3&gt;</span>Contact<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;p&gt;&lt;a </span><span class="na">href=</span><span class="s">&quot;https://linkedin.com/in/jiashern&quot;</span><span class="nt">&gt;</span>LinkedIn<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;br&gt;</span>
 <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;mailto:jiasherntan@gmail.com&quot;</span><span class="nt">&gt;</span>jiasherntan@gmail.com<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
 </code></pre></div>
@@ -168,7 +168,7 @@ So you&#39;ve got:</p>
    <span class="nt">&lt;h1&gt;</span>Name<span class="nt">&lt;/h1&gt;</span>
     	<span class="nt">&lt;h2&gt;</span>Title<span class="nt">&lt;/h2&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
-    	<span class="nt">&lt;h4&gt;</span>Contact<span class="nt">&lt;/h4&gt;</span>
+    	<span class="nt">&lt;h3&gt;</span>Contact<span class="nt">&lt;/h3&gt;</span>
 <span class="nt">&lt;p&gt;&lt;a href=</span><span class="nt">&quot;https://linkedin.com/in/jiashern&quot;</span><span class="nt">&gt;</span>LinkedIn<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;br&gt;</span>
 <span class="nt">&lt;p&gt;&lt;a</span> <span class="nt">href=</span><span class="s">&quot;mailto:jiasherntan@gmail.com&quot;</span><span class="nt">&gt;</span>jiasherntan@gmail.com<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
@@ -188,10 +188,10 @@ So you&#39;ve got:</p>
 
 <p>Let&#39;s create a file called <code>main.css</code> (in the same folder as cv.html) and we have to link to it in our <code>head</code> tag, we've already done this in part 1 using:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
 	<span class="nt"><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"&gt;</code></span>
 	<span class="nt"><code>&lt;link rel="stylesheet" href="main.css"&gt;</code></span>
-  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
   </code></pre></div>
 
 <p>The <code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"&gt;</code> is to link to Bootstrap's online CSS file.</p>  
@@ -321,10 +321,10 @@ You've already added the &lt;div class="page-wrap"&gt;element to <code>index.htm
 <p><code>:hello</code> selectors are what we call pseudo-selectors, they allow you to select an element only under certain conditions. Here it&#39;s selected when the link (anchor) is hovered, focused, and  active (these are quite rare but are triggered sometimes on phones before the next page loads or the click registers). There are others though like <code>:first-child</code>, <code>:after</code> (there are extensive lists on places like google).</p>
 
 <h2>Final Code - HTML</h2>
-<img src="https://s3.amazonaws.com/f.cl.ly/items/411X1J2M2s3F470e1o1O/Image%202015-10-23%20at%201.37.22%20AM.png">
+<img src="http://d.pr/i/1l3nR">
 
 <h2>Final Code - CSS </h2>
-<img src="https://s3.amazonaws.com/f.cl.ly/items/2q140L1W1L1q3S2G0Y27/Image%202015-10-23%20at%201.39.15%20AM.png">
+<img src="http://d.pr/i/PsiA">
 
 
 <h3>The easiest way to put this online is to use <a href="https://pages.github.com/">GitHub Pages</a></h3>
